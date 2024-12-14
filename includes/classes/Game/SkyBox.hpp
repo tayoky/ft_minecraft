@@ -10,6 +10,7 @@
 #include <fstream>
 #include <sstream>
 #include <iostream>
+#include "linuxtypes.h"
 
 
 #include <classes/VAO/VertexArrayObjectHandler.hpp>

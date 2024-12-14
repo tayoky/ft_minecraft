@@ -13,6 +13,7 @@
 #include <iostream>
 #include <filesystem>
 #include <vector>
+#include <linuxtypes.h>
 
 typedef struct vertexAttribute
 {

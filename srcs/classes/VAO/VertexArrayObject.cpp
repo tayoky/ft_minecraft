@@ -1,4 +1,5 @@
 #include <classes/VAO/VertexArrayObject.hpp>
+#include "linuxtypes.h"
 
 VertexArrayObject::VertexArrayObject(VertexBufferObject *VBO, ElementBufferObject *EBO, Shader *shader) : VBO(VBO), EBO(EBO), shader(shader) {
 	indicesSize = EBO->GetSize();

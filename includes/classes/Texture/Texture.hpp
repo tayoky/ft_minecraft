@@ -3,6 +3,7 @@
 
 #include <iostream>
 
+#include "linuxtypes.h"
 class Texture
 {
     public:

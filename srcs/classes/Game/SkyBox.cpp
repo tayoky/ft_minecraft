@@ -1,6 +1,7 @@
 #include <classes/Game/SkyBox.hpp>
 # include <cmath>
 # include <classes/Texture/TextureLoader.hpp>
+#include "filesystem"
 
 float skyboxVertices[] = {
         // positions          
@@ -114,7 +115,7 @@ SkyBox::SkyBox(Shader *skyBoxShader)
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
 
-	std::vector<std::string> faces
+    std::vector<std::string> faces
     {
         std::filesystem::path("textures/skybox/right.jpg"),
         std::filesystem::path("textures/skybox/left.jpg"),
@@ -127,7 +128,7 @@ SkyBox::SkyBox(Shader *skyBoxShader)
 	cubemapTexture = loadCubemap(faces);
 }
 
-void SkyBox::drawSkybox(glm::mat4 view, glm::mat4 proj, __attribute__((unused)) glm::vec3 pos)
+void SkyBox::drawSkybox(glm::mat4 view, glm::mat4 proj,  glm::vec3 pos)
 {
 		glDepthMask(GL_FALSE);  
 		shader->Use();
@@ -148,12 +149,12 @@ void SkyBox::drawSkybox(glm::mat4 view, glm::mat4 proj, __attribute__((unused)) 
 
 
 
-void SkyBox::setRenderDistance(__attribute__((unused)) unsigned int renderDistance)
+void SkyBox::setRenderDistance( unsigned int renderDistance)
 {
 
 }
 
-void SkyBox::replace(__attribute__((unused)) int x, __attribute__((unused)) int y)
+void SkyBox::replace( int x,  int y)
 {
 	
 }

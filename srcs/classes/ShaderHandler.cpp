@@ -1,4 +1,5 @@
 #include <classes/ShaderHandler.hpp>
+#include "filesystem"
 
 ShaderHandler::~ShaderHandler()
 {

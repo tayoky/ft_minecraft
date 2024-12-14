@@ -1,4 +1,5 @@
 #include <classes/Texture/TextureArray.hpp>
+#include "linuxtypes.h"
 
 TextureArray::~TextureArray()
 {}

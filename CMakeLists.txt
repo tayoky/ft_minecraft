@@ -4,12 +4,15 @@
 set(name ft_vox)
 project(${name})
 
+#use cpp 17
+set(CMAKE_CXX_STANDARD 17)
+
 #add the subdirectory for glfw
 add_subdirectory(glfw)
 
 #get the sources files
-file(GLOB c_files ${CMAKE_CURRENT_SOURCE_DIR}/srcs/*.c)
-file(GLOB cpp_files ${CMAKE_CURRENT_SOURCE_DIR}/srcs/*.cpp)
+file(GLOB_RECURSE c_files "${CMAKE_CURRENT_SOURCE_DIR}/srcs/*.c")
+file(GLOB_RECURSE cpp_files "${CMAKE_CURRENT_SOURCE_DIR}/srcs/*.cpp")
 
 #the executable
 add_executable(${name} ${c_files} ${cpp_files})

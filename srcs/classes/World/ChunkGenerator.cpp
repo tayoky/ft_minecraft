@@ -42,7 +42,8 @@ ChunkGenerator::ChunkGenerator()
 	
 }
 
-ChunkGenerator::ChunkGenerator(__attribute__((unused)) u_int seed)
+ChunkGenerator::ChunkGenerator(
+	u_int seed)
 {
 	
 }
@@ -225,7 +226,7 @@ int ChunkGenerator::gen2DCave(int hill_height, int pos, int &z)
 	return 0;
 }
 
-int ChunkGenerator::genWater( int pos, __attribute__((unused)) int &z)
+int ChunkGenerator::genWater( int pos,  int &z)
 {
 	int posWater = 60;
 	

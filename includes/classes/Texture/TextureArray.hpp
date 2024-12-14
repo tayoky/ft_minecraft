@@ -2,6 +2,7 @@
 # define TEXTUREARRAY_HPP
 
 #include <iostream>
+#include "linuxtypes.h"
 
 class TextureArray
 {

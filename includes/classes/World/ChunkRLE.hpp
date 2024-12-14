@@ -10,6 +10,7 @@
 # include <chrono>
 
 # include <classes/World/AChunk.hpp>
+#include "linuxtypes.h"
 
 	
 class ChunkRLE : public AChunk

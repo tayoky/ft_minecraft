@@ -25,7 +25,7 @@ class ProfilerObject {
 
 		bool isTracking = false;
 		const char *name;
-		std::chrono::_V2::system_clock::time_point startTime;
+		//std::chrono::_V2::system_clock::time_point startTime;
 		std::vector<std::chrono::duration<int64_t, std::nano>> data;
 
 		ProfilerObject(const char *name);

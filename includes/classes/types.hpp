@@ -3,6 +3,7 @@
 
 #include <glm/glm.hpp>
 #include <vector>
+#include "linuxtypes.h"
 
 struct Vertex
 {

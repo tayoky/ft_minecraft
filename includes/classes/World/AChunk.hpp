@@ -8,6 +8,7 @@
 #include <mutex>
 
 #include <classes/types.hpp>
+#include "linuxtypes.h"
 
 # define NEIGHB_NORTH 0
 # define NEIGHB_SOUTH 1

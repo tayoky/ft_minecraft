@@ -7,6 +7,7 @@
 #include <GLFW/glfw3.h>
 
 #include <classes/types.hpp>
+#include "linuxtypes.h"
 
 
 
