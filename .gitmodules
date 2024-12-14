@@ -1,0 +1,6 @@
+[submodule "glfw"]
+	path = glfw
+	url = https://github.com/glfw/glfw
+[submodule "openldap"]
+	path = openldap
+	url = https://git.openldap.org/openldap/openldap.git
