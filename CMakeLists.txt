@@ -21,3 +21,9 @@ target_include_directories(${exe_name} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/inclu
 target_include_directories(${exe_name} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/lib/glm/)
 target_link_directories(${exe_name} PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/lib/glfw)
 add_compile_definitions(GLM_ENABLE_EXPERIMENTAL)
+
+target_link_libraries(${exe_name} PRIVATE glfw)
+
+#put texture and shader into build folder
+install(DIRECTORY textures/ DESTINATION textures)
+install(DIRECTORY shaders/ DESTINATION shaders)
