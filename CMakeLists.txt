@@ -1,4 +1,3 @@
-
 cmake_minimum_required(VERSION 3.10)
 
 project(ft_minecraft)
@@ -20,7 +19,7 @@ target_include_directories(${exe_name} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/lib/g
 target_include_directories(${exe_name} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 target_include_directories(${exe_name} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/lib/glm/)
 target_link_directories(${exe_name} PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/lib/glfw)
-add_compile_definitions(GLM_ENABLE_EXPERIMENTAL)
+add_compile_definitions(GLM_ENABLE_EXPERIMENTAL NOMINMAX)
 
 target_link_libraries(${exe_name} PRIVATE glfw)
 
