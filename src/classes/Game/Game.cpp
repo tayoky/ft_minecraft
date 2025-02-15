@@ -20,20 +20,20 @@ Game::Game() {
 													playerHasMoved, playerHasMoved_mutex);
 	blockTextureArray = TextureLoader::LoadTextureArray(
 	{
-	std::filesystem::path("textures/texturePack/dirt.jpg"),
-	std::filesystem::path("textures/texturePack/dirt.jpg"),
-	std::filesystem::path("textures/texturePack/grass.jpg"),
-	std::filesystem::path("textures/texturePack/stone.jpg"),
-	std::filesystem::path("textures/texturePack/sand.jpg"),
-	std::filesystem::path("textures/texturePack/oak_wood_side.jpg"),
-	std::filesystem::path("textures/texturePack/leaves_2.jpg"),
-	std::filesystem::path("textures/texturePack/bedrock.jpg"),
-	std::filesystem::path("textures/texturePack/water.jpg"),
-	std::filesystem::path("textures/texturePack/snow.jpg"),
-	std::filesystem::path("textures/texturePack/iron_ore.jpg"),
-	std::filesystem::path("textures/texturePack/gold_ore.jpg"),
-	std::filesystem::path("textures/texturePack/diamond_ore.jpg"),
-	std::filesystem::path("textures/texturePack/UNKNOWN.jpg"),
+	("textures/texturePack/dirt.jpg"),
+	("textures/texturePack/dirt.jpg"),
+	("textures/texturePack/grass.jpg"),
+	("textures/texturePack/stone.jpg"),
+	("textures/texturePack/sand.jpg"),
+ ("textures/texturePack/oak_wood_side.jpg"),
+	("textures/texturePack/leaves_2.jpg"),
+	("textures/texturePack/bedrock.jpg"),
+	("textures/texturePack/water.jpg"),
+	("textures/texturePack/snow.jpg"),
+	("textures/texturePack/iron_ore.jpg"),
+	("textures/texturePack/gold_ore.jpg"),
+	("textures/texturePack/diamond_ore.jpg"),
+	("textures/texturePack/UNKNOWN.jpg"),
 	});
 
 	VertexArrayObjectHandler *vertexArrayObjectHandler = new VertexArrayObjectHandler();
