@@ -117,12 +117,12 @@ SkyBox::SkyBox(Shader *skyBoxShader)
 
 	std::vector<std::string> faces
     {
-        std::filesystem::path("textures/skybox/right.jpg"),
-        std::filesystem::path("textures/skybox/left.jpg"),
-        std::filesystem::path("textures/skybox/bottom.jpg"),
-        std::filesystem::path("textures/skybox/top.jpg"),
-        std::filesystem::path("textures/skybox/front.jpg"),
-        std::filesystem::path("textures/skybox/back.jpg")
+        ("textures/skybox/right.jpg"),
+        ("textures/skybox/left.jpg"),
+        ("textures/skybox/bottom.jpg"),
+        ("textures/skybox/top.jpg"),
+        ("textures/skybox/front.jpg"),
+        ("textures/skybox/back.jpg")
     };
 
 	cubemapTexture = loadCubemap(faces);
